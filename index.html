@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Reminder App</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function() {
+      emailjs.init("scgPYIh4jJRBZR5NS"); // Replace with your EmailJS public key
+    })();
+</script>
+</head>
+<body>
+  <div class="container">
+    <h1>Task Reminder App</h1>
+    <form id="task-form">
+      <input type="text" id="task-name" placeholder="Task Name" required />
+      <input type="datetime-local" id="task-date" required />
+
+      <label>Choose Reminder Times:</label>
+      <div class="reminder-buttons">
+        <input type="checkbox" id="reminder-24h" value="1440" />
+        <label for="reminder-24h">24 hours</label>
+
+        <input type="checkbox" id="reminder-12h" value="720" />
+        <label for="reminder-12h">12 hours</label>
+
+        <input type="checkbox" id="reminder-30m" value="30" />
+        <label for="reminder-30m">30 minutes</label>
+      </div>
+
+      <button type="submit">Add Task</button>
+    </form>
+
+    <h2>Active Tasks</h2>
+    <ul id="task-list"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
+

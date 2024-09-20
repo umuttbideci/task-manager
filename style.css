@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 600px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    animation: fadeIn 0.5s;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus {
+    border-color: #5cb85c;
+    box-shadow: 0 0 5px rgba(92, 184, 92, 0.5);
+  }
+  
+  button {
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background-color: #4cae4c;
+    transform: translateY(-2px);
+  }
+  
+  h2 {
+    margin-top: 30px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-left: 4px solid #5cb85c;
+    border-radius: 4px;
+    position: relative;
+    transition: box-shadow 0.3s;
+  }
+  
+  li:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  li span {
+    font-weight: bold;
+  }
+  
+  .task-actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .task-actions button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .task-actions button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+  }
+  
+  /* Animation for fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Additional styles for reminder buttons */
+  .reminder-buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .reminder-buttons input {
+    margin-right: 5px;
+  }
+  
